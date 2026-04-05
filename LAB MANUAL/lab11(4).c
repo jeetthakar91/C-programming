@@ -7,7 +7,7 @@ int main()
  char str1[50],str2[50],*ptr[50];
  int i;
  
- printf("Enter the sting here :");
+ printf("Enter the string here :");
  scanf("%s",str1);
 	 
  for(i = 0; str1[i]!= '\0';i++) {
@@ -18,8 +18,9 @@ int main()
  	str2[i]=*ptr[i];
  }
  
- for(i=0;str2[i]!='\0';i++){
- 	printf("%c",str2[i]);
- }
+ str2[i]='\0';
+ 
+ printf("Copied string: %s",str2);
+
  return 0;
 }
